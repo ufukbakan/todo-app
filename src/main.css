@@ -8,11 +8,6 @@ body{
     padding: 1em;
     box-sizing: border-box;
     max-width: 100%;
-    text-align: center;
-}
-
-.content *{
-    text-align: initial;
 }
 
 .add-button{
@@ -194,4 +189,19 @@ body{
     display: inline-flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+.rendered-notes{
+    text-align: center;
+}
+
+.rendered-notes *{
+    text-align: initial;
+}
+
+@media screen and (max-width: 575px){
+    .todo-wrapper .float-right .action-icon{
+        opacity: 1;
+        pointer-events: initial;
+    }
 }
